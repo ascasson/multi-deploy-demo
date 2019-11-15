@@ -1,4 +1,4 @@
-name: Test 2 Deploy {{ github.event.pull_request }}
+name: Test 2 Deploy ${{ github.event.pull_request.labels.*.name }}
 
 on:
   pull_request:
